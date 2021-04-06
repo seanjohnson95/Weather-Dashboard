@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+ <header class="jumbotron">
+    <h1 class="display-3">Weather Dashboard</h1> 
+</header>
+
+<main class="row justify-space-between">
+    <div class="col-md-4">
+      <div class="card">
+        <h3 class="card-header">Lookup a City</h3>
+        <form id="user-form" class="card-body">
+          <input name="city-name" id="city-name" type="text" autofocus="true" class="form-input" />
+         
+          <button type="submit" class="btn"> <img src="./assets/weather.jpg"> </button>
+        </form>
+      </div> 
+    </div>
+
+    <div class="col-md-8">
+      <div class="city-icon">
+        <h3 id="city" class="city">City</h3>
+        <p class="icon"></p>
+      </div>
+      <h3 id="temperature" class="temperature">Temperature:</h3>
+      <h3 id="humidity" class="humidity">Humidity:</h3>
+      <h3 id="wind-speed" class="wind-speed">Wind Speed:</h3>
+      <h3 id="uv-index" class="uv-index">UV Index:</h3>
+      <h3 id="time" class="time">Time:</h3>
+      <h3 class="five-day-header">5-Day Forecast:</h3>
+         <div id="five-day-weather" class="row">
+         </div>  
+    </div>  
+
+    
+
+
+</main>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
